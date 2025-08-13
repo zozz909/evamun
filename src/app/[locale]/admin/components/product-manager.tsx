@@ -13,7 +13,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
-import { PlusCircle, Edit, Trash2, MoreHorizontal, Loader2 } from "lucide-react";
+import { PlusCircle, Edit, Trash2, MoreHorizontal, Loader } from "@/components/ui/icons";
 import { RiyalLogo } from "@/components/ui/riyal-logo";
 import { SafeImage } from "@/components/ui/safe-image";
 import { ImageUploadFolder } from "@/components/ui/image-upload-folder";
@@ -221,7 +221,7 @@ export function ProductManager() {
         });
       }
     } catch (error) {
-      console.error('Error deleting product:', error);
+      // Error deleting product
       toast({
         title: "خطأ",
         description: "فشل في حذف المنتج",
@@ -459,7 +459,7 @@ export function ProductManager() {
                   <Button type="submit" disabled={submitting}>
                     {submitting ? (
                       <>
-                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        <Loader2 size={16} className="mr-2 animate-spin" />
                         جاري الحفظ...
                       </>
                     ) : (

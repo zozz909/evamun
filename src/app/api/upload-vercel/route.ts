@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
     // التحقق من حجم الملف (10MB max)
     const maxSize = 10 * 1024 * 1024; // 10MB
     if (file.size > maxSize) {
-      console.log('❌ File too large:', file.size);
+      // File too large
       return NextResponse.json(
         { error: 'حجم الملف كبير جداً. الحد الأقصى 10MB' },
         { status: 400 }

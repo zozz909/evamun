@@ -63,7 +63,7 @@ export function ImageUploadFolder({
       formData.append('file', file);
       formData.append('type', type);
 
-      console.log(`📤 Uploading ${file.name} to ${type} folder...`);
+      // Uploading file to folder
 
       // تحديد طريقة الرفع حسب البيئة
       const isProduction = process.env.NODE_ENV === 'production' ||

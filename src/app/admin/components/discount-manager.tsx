@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
-import { PlusCircle, MoreHorizontal, Edit, Trash2 } from "lucide-react";
+import { PlusCircle, MoreHorizontal, Edit, Trash2 } from "@/components/ui/icons";
 import { useToast } from "@/hooks/use-toast";
 import {
   Dialog,

@@ -4,7 +4,7 @@ import * as React from "react"
 import { useTranslations } from 'next-intl'
 import { SafeImage } from "@/components/ui/safe-image"
 import { Card, CardContent } from "@/components/ui/card"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+// Using simple arrow symbols instead of icons for better performance
 import { type Promotion } from "@/lib/data"
 
 export function PromotionalBanner({ promotions }: { promotions: Promotion[] }) {
@@ -76,14 +76,14 @@ export function PromotionalBanner({ promotions }: { promotions: Promotion[] }) {
                 className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-200 backdrop-blur-sm"
                 aria-label="الشريحة السابقة"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <span className="text-lg">←</span>
               </button>
               <button
                 onClick={nextSlide}
                 className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-200 backdrop-blur-sm"
                 aria-label="الشريحة التالية"
               >
-                <ChevronRight className="w-5 h-5" />
+                <span className="text-lg">→</span>
               </button>
             </>
           )}

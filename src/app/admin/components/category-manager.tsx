@@ -11,7 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
-import { PlusCircle, Edit, Trash2, MoreHorizontal, Loader2, FolderOpen } from "lucide-react";
+import { PlusCircle, Edit, Trash2, MoreHorizontal, Loader2, FolderOpen } from "@/components/ui/icons";
 
 // أنواع البيانات
 interface Category {

@@ -29,11 +29,11 @@ export function getPool(): mysql.Pool {
 export async function connectDB() {
   try {
     const connection = await getPool().getConnection();
-    console.log('✅ Connected to MySQL database successfully');
+    // Connected to MySQL database successfully
     connection.release();
     return true;
   } catch (error) {
-    console.error('❌ Database connection failed:', error);
+    // Database connection failed
     return false;
   }
 }
@@ -47,7 +47,7 @@ export async function executeQuery<T = any>(
     const [rows] = await getPool().execute(query, params);
     return rows as T[];
   } catch (error) {
-    console.error('Database query error:', error);
+    // Database query error
     throw error;
   }
 }

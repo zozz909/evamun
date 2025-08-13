@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     });
 
   } catch (error) {
-    console.error('Error cleaning up expired new products:', error);
+    // Error cleaning up expired new products
     return NextResponse.json(
       { error: 'حدث خطأ أثناء تنظيف المنتجات المنتهية الصلاحية' },
       { status: 500 }
@@ -51,7 +51,7 @@ export async function GET() {
     });
 
   } catch (error) {
-    console.error('Error fetching expired new products:', error);
+    // Error fetching expired new products
     return NextResponse.json(
       { error: 'حدث خطأ أثناء جلب المنتجات المنتهية الصلاحية' },
       { status: 500 }

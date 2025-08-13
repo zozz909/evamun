@@ -4,7 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { ProductCard } from '@/components/product-card';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ArrowRight, Trophy, Star, Play, Pause } from 'lucide-react';
+// Using simple arrow symbols instead of icons for better performance
+// import { ArrowLeft, ArrowRight, Trophy, Star, Play, Pause } from 'lucide-react';
 import { transformProductForOldFormat } from '@/lib/data-fetcher';
 
 interface Product {
@@ -169,7 +170,7 @@ export function BestsellersSection() {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
             <div className="bg-primary/10 p-3 rounded-full">
-              <Trophy className="h-8 w-8 text-primary" />
+              <span className="text-2xl">🏆</span>
             </div>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary mb-4">
@@ -189,7 +190,7 @@ export function BestsellersSection() {
               onClick={toggleAutoPlay}
               className="text-muted-foreground hover:text-primary"
             >
-              {isPlaying ? <Pause className="h-4 w-4 mr-1" /> : <Play className="h-4 w-4 mr-1" />}
+              <span className="mr-1">{isPlaying ? '⏸️' : '▶️'}</span>
               {isPlaying ? t('pause') : t('play')}
             </Button>
           </div>
@@ -201,7 +202,7 @@ export function BestsellersSection() {
               onClick={prevSlide}
               className="h-8 w-8 rounded-full hover:bg-primary/10"
             >
-              <ArrowRight className="h-4 w-4" />
+              <span>→</span>
             </Button>
             <Button
               variant="ghost"
@@ -209,7 +210,7 @@ export function BestsellersSection() {
               onClick={nextSlide}
               className="h-8 w-8 rounded-full hover:bg-primary/10"
             >
-              <ArrowLeft className="h-4 w-4" />
+              <span>←</span>
             </Button>
           </div>
         </div>

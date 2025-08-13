@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon } from "@/components/ui/icons";
 
 export default function AdminLayout({
   children,

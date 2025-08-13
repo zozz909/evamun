@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { Button } from "@/components/ui/button";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon } from "@/components/ui/icons";
 
 export default function AdminLayout({
   children,

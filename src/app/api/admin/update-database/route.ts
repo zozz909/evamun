@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
         await executeQuery(query);
       } catch (error) {
         // تجاهل الخطأ إذا كان الفهرس موجود بالفعل
-        console.log('Index might already exist:', error);
+        // Index might already exist
       }
     }
 
@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
     });
 
   } catch (error) {
-    console.error('Database update error:', error);
+    // Database update error
     return NextResponse.json(
       { error: 'حدث خطأ أثناء تحديث قاعدة البيانات' },
       { status: 500 }

@@ -13,7 +13,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
-import { PlusCircle, Edit, Trash2, MoreHorizontal, Loader2 } from "lucide-react";
+import { PlusCircle, Edit, Trash2, MoreHorizontal, Loader2 } from "@/components/ui/icons";
 import { RiyalLogo } from "@/components/ui/riyal-logo";
 import { SafeImage } from "@/components/ui/safe-image";
 import { getSafeImageUrl as getImageUrl } from "@/lib/image-utils";

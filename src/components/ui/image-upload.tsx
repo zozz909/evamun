@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { SafeImage } from '@/components/ui/safe-image';
-import { Upload, X, Loader2 } from 'lucide-react';
+import { Upload, X, Loader } from '@/components/ui/icons';
 import { useToast } from '@/hooks/use-toast';
 
 interface ImageUploadProps {

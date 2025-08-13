@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { SafeImage } from "@/components/ui/safe-image";
-import { FolderOpen, Image as ImageIcon, Trash2, Download, Eye } from "lucide-react";
+import { FolderOpen, ImageIcon, Trash2, Download, Eye } from "@/components/ui/icons";
 import { useToast } from "@/hooks/use-toast";
 
 interface UploadedFile {

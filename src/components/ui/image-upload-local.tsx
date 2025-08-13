@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { SafeImage } from '@/components/ui/safe-image';
-import { Upload, X, Loader2 } from 'lucide-react';
+import { Upload, X, Loader } from '@/components/ui/icons';
 import { useToast } from '@/hooks/use-toast';
 
 interface ImageUploadLocalProps {
@@ -66,9 +66,9 @@ export function ImageUploadLocal({
           const imageId = `image_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
           try {
             localStorage.setItem(imageId, result);
-            console.log('Image saved to localStorage with ID:', imageId);
+            // Image saved to localStorage
           } catch (storageError) {
-            console.warn('Could not save to localStorage:', storageError);
+            // Could not save to localStorage
           }
           
           // إرجاع الـ data URL مباشرة

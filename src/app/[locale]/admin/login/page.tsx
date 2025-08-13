@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Eye, EyeOff, Lock, User } from "lucide-react";
+import { Eye, User } from "@/components/ui/icons";
 
 export default function AdminLogin() {
   const [formData, setFormData] = useState({

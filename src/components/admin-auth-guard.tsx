@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { LogOut, Shield } from 'lucide-react';
+import { LogOut, Shield } from '@/components/ui/icons';
 import { useToast } from '@/hooks/use-toast';
 
 interface AdminAuthGuardProps {
